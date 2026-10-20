@@ -1,105 +1,157 @@
-# Hangman Game | CodeAlpha Python Internship
+# CodeAlpha Python Programming Internship
 
-## Overview
+Welcome to my **CodeAlpha Python Programming Internship** repository!
 
-Hangman is a command-line word guessing game developed using Python as part of the **CodeAlpha Python Programming Internship (October–November 2026)**.
+This repository contains three Python projects developed during the **CodeAlpha Internship (10 October 2026 – 10 November 2026)**. These projects demonstrate fundamental Python programming concepts, logical problem-solving, file automation, and rule-based chatbot development.
 
-The objective is to guess a randomly selected hidden word, one letter at a time, before exhausting the maximum number of incorrect attempts.
+## Internship Information
 
-## Features
+| Detail | Information |
+|---|---|
+| Organization | CodeAlpha |
+| Domain | Python Programming |
+| Internship Batch | October – November 2026 |
+| Programming Language | Python 3 |
+| Tasks Completed | 3 |
+| Repository | `codealpha_tasks` |
 
-- **Random Word Selection:** Randomly chooses a word from a predefined list of five words.
-- **Limited Attempts:** Players have a maximum of six incorrect guesses.
-- **Input Validation:** Accepts only single alphabetic characters.
-- **Duplicate Guess Detection:** Prevents repeated guesses.
-- **Progress Tracking:** Displays correctly guessed letters and hides remaining letters.
-- **Guess History:** Shows all previously guessed letters.
-- **Win/Loss Detection:** Displays appropriate messages when the player wins or loses.
+---
 
-## Technologies Used
+## Projects
 
-- **Language:** Python 3
-- **Library:** `random` (Python Standard Library)
-- **Interface:** Command Line Interface (CLI)
+### Task 1: Hangman Game
 
-No external packages are required.
+A command-line word guessing game built using Python. The player must guess a randomly selected word before running out of attempts.
 
-## How to Run
+**Key Features:**
+- Random word selection from a predefined list
+- Six incorrect attempts allowed
+- Interactive letter-by-letter guessing
+- Input validation for alphabetic characters
+- Detection of previously guessed letters
+- Real-time word progress and remaining attempts
+- Win and loss messages
 
-1. Install Python 3 on your computer.
-2. Download or clone this repository.
-3. Open a terminal in the project directory.
-4. Run the following command:
+**Technologies:** Python, `random` module
+
+**Run the project:**
 
 ```bash
-python hangman.py
+python Task_1_Hangman_Game/hangman.py
 ```
 
-## Sample Gameplay
+### Task 2: File Organizer
 
-```text
-===================
-Welcome to Hangman Game
-===================
-Guess the hidden word! You have 6 incorrect attempts.
+A Python automation script that automatically organizes JPEG image files into a dedicated folder.
 
-Word: _ _ _ _ _ _
-Incorrect guesses left: 6
-Guessed letters: None
+**Key Features:**
+- Accepts a user-defined source directory
+- Creates a `JPEG_Images` folder automatically
+- Detects `.jpg` and `.jpeg` files (case-insensitive)
+- Moves matching images into the destination folder
+- Displays the total number of files moved
+- Supports the current working directory as the default location
+- Handles invalid source directory paths
 
-Guess a letter: p
-Correct guess!
+**Technologies:** Python, `os`, `shutil`
 
-Word: p _ _ _ _ _
-Incorrect guesses left: 6
-Guessed letters: p
+**Run the project:**
 
-Guess a letter: z
-Wrong guess!
-
-Word: p _ _ _ _ _
-Incorrect guesses left: 5
-Guessed letters: p, z
+```bash
+python Task_2_File_Organizer/file_organizer.py
 ```
 
-*Sample output illustrates gameplay; the actual word is randomly selected.*
+**Note:** This script moves files rather than copying them. Use a test directory before organizing important files. Files with duplicate names in the destination may cause conflicts.
 
-## How It Works
+### Task 3: Rule-Based Chatbot
 
-1. The program randomly selects a secret word.
-2. The player enters one letter per turn.
-3. Correct guesses reveal matching letters in the hidden word.
-4. Incorrect guesses reduce the remaining attempts.
-5. Repeated guesses and invalid inputs do not consume attempts.
-6. The player wins by identifying all letters or loses after six incorrect guesses.
+A simple interactive chatbot developed using Python that responds to predefined user queries using conditional statements.
 
-## Project Structure
+**Key Features:**
+- Responds to greetings such as `hello`, `hi`, and `hey`
+- Answers basic conversational questions
+- Provides information about CodeAlpha
+- Case-insensitive text processing
+- Handles unknown inputs with a default response
+- Continuous interactive conversation
+- Supports exit commands including `bye`, `exit`, and `quit`
+
+**Technologies:** Python, conditional statements, string processing
+
+**Run the project:**
+
+```bash
+python Task_3_Rule_Based_Chatbot/chatbot.py
+```
+
+---
+
+## Repository Structure
 
 ```text
-CodeAlpha_Hangman_Game/
-├── hangman.py
+codealpha_tasks/
+│
+├── Task_1_Hangman_Game/
+│   └── hangman.py
+│
+├── Task_2_File_Organizer/
+│   └── file_organizer.py
+│
+├── Task_3_Rule_Based_Chatbot/
+│   └── chatbot.py
+│
 └── README.md
 ```
 
-## Internship Details
+## Installation and Setup
 
-- **Organization:** CodeAlpha
-- **Domain:** Python Programming
-- **Task:** Task 1 – Hangman Game
-- **Batch:** 10 October 2026 – 10 November 2026
-- **Project Type:** Python CLI Application
+**Prerequisites:**
+- Python 3 installed
+- Terminal or command prompt
+- Git (optional, for cloning)
 
-## Learning Outcomes
+**Step 1: Clone the repository**
 
-This project demonstrates fundamental Python programming concepts, including:
+```bash
+git clone https://github.com/YOUR_USERNAME/codealpha_tasks.git
+```
 
-- Functions and control flow
-- Loops and conditional statements
-- Lists and strings
-- Random selection
-- User input validation
-- Basic game logic
+**Step 2: Navigate to the repository**
+
+```bash
+cd codealpha_tasks
+```
+
+**Step 3: Run any project**
+
+For example:
+
+```bash
+python Task_1_Hangman_Game/hangman.py
+```
+
+All three projects use Python's standard library and require no additional package installation.
+
+---
+
+## Concepts and Skills Demonstrated
+
+- Python fundamentals
+- Functions, loops, and conditional statements
+- Lists and string manipulation
+- Input validation and user interaction
+- Random word generation
+- File handling and directory operations
+- Task automation
+- Rule-based conversational logic
+- Problem-solving and algorithmic thinking
 
 ## Acknowledgment
 
-Developed as part of the CodeAlpha Python Programming Internship to strengthen practical programming and problem-solving skills.
+I would like to thank **CodeAlpha** for providing the opportunity to gain hands-on experience through practical Python programming tasks.
+
+These projects were developed as part of the CodeAlpha Python Programming Internship.
+
+---
+
+**CodeAlpha | Python Programming Internship | October–November 2026**
